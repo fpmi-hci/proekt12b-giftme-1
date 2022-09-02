@@ -1,2 +1,5 @@
 # proekt12b-giftme-1
-proekt12b-giftme-1 created by GitHub Classroom
+
+Project name: GiftMe
+
+Description: Проект позволяет пользователю создавать собственный список желаемых подарков на определённое мероприятие, а также делиться им с другими пользователями.
