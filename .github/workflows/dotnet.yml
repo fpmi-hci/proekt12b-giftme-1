@@ -15,4 +15,4 @@ jobs:
         dotnet-version: 6.0.x
     - name: Build with dotnet
       run: dotnet build
-      working-directory: Wishlist/*.sln
+      working-directory: Wishlist\*.sln
