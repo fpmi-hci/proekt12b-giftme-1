@@ -15,5 +15,3 @@ jobs:
         dotnet-version: 6.0.x
     - name: Build with dotnet
       run: dotnet build
-      working-directory:  WishList\Wishlist.Business\WishList.Business.csproj
-      
