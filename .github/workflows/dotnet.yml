@@ -16,3 +16,6 @@ jobs:
     - name: Build with dotnet
       run: dotnet build
       working-directory: Wishlist\
+    - name: Test
+      run: dotnet test
+      working-directory: Wishlist\WishList.UnitTests\
