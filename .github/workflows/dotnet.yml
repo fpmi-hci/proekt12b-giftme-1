@@ -15,4 +15,4 @@ jobs:
         dotnet-version: 6.0.x
     - name: Build with dotnet
       run: dotnet build
-      working-directory: WishList/WishList.UnitTests/
+      working-directory: /home/runner/work/proekt12b-giftme-1/proekt12b-giftme-1/.Wishlist/*.sln
