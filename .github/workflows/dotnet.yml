@@ -1,11 +1,7 @@
-name: .NET
+name: ASP.NET Core CI
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+on:  [push]
+  
 jobs:
   build:
 
@@ -17,10 +13,5 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-      working-directory: WishList/*/*.csproj
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    - name: Build with dotnet
+      run: dotnet build
