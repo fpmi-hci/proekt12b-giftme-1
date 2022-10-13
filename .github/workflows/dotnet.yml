@@ -3,8 +3,7 @@ name: ASP.NET Core CI
 on:  [push]
   
 jobs:
-  build:
-
+  build_and_test:
     runs-on: windows-2019
 
     steps:
@@ -13,9 +12,10 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
-    - name: Build with dotnet
-      run: dotnet build
-      working-directory: Wishlist\
     - name: Test
       run: dotnet test
       working-directory: Wishlist\WishList.UnitTests\
+    - name: Build with dotnet
+      run: dotnet build
+      working-directory: Wishlist\
+
