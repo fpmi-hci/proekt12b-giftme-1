@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WishList.Business\WishList.Business.csproj" />
+  </ItemGroup>
+
 </Project>
