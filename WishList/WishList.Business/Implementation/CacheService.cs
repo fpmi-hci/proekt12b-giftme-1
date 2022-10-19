@@ -22,7 +22,7 @@ namespace WishList.Business.Implementation
 
         public void AddToCache<T>(T o, string key)
         {
-            _cache.Set(key, o, _configuration.GetValue<TimeSpan>("CacheTime"));
+            _cache.Set(key, o, TimeSpan.FromHours(24));
         }
 
         public T Get<T>(string key)
