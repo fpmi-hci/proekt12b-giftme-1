@@ -12,3 +12,7 @@ RUN apt-get install dotnet-sdk-6.0 -y && \
 RUN git clone https://github.com/fpmi-hci/proekt12b-giftme-1.git
 
 RUN cd proekt12b-giftme-1/WishList && /usr/bin/dotnet build
+
+WORKDIR proekt12b-giftme-1/WishList/WishList
+
+CMD /usr/bin/dotnet run
