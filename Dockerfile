@@ -9,7 +9,9 @@ RUN apt-get install dotnet-sdk-6.0 -y && \
 	apt-get install apt-transport-https -y && \
 	apt-get install dotnet-runtime-6.0 -y
 	
-RUN git clone https://github.com/fpmi-hci/proekt12b-giftme-1.git
+RUN git clone https://github.com/fpmi-hci/proekt12b-giftme-1.git && \
+	cd proekt12b-giftme-1 && \
+	git checkout gcloud-dev
 
 RUN cd proekt12b-giftme-1/WishList && /usr/bin/dotnet build
 
